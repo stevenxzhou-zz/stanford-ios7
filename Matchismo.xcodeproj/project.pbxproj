@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		B0906C821B5C80EE00B0C1D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0906C811B5C80EE00B0C1D0 /* main.m */; };
 		B0906C851B5C80EE00B0C1D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0906C841B5C80EE00B0C1D0 /* AppDelegate.m */; };
-		B0906C881B5C80EE00B0C1D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0906C871B5C80EE00B0C1D0 /* ViewController.m */; };
 		B0906C8B1B5C80EE00B0C1D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0906C891B5C80EE00B0C1D0 /* Main.storyboard */; };
 		B0906C8D1B5C80EE00B0C1D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0906C8C1B5C80EE00B0C1D0 /* Images.xcassets */; };
 		B0906C901B5C80EE00B0C1D0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0906C8E1B5C80EE00B0C1D0 /* LaunchScreen.xib */; };
 		B0906C9C1B5C80EE00B0C1D0 /* MatchismoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0906C9B1B5C80EE00B0C1D0 /* MatchismoTests.m */; };
+		B0906CAA1B5C820D00B0C1D0 /* CardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0906CA91B5C820D00B0C1D0 /* CardGameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		B0906C811B5C80EE00B0C1D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B0906C831B5C80EE00B0C1D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B0906C841B5C80EE00B0C1D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B0906C861B5C80EE00B0C1D0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B0906C871B5C80EE00B0C1D0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B0906C8A1B5C80EE00B0C1D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0906C8C1B5C80EE00B0C1D0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B0906C8F1B5C80EE00B0C1D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B0906C951B5C80EE00B0C1D0 /* MatchismoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchismoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0906C9A1B5C80EE00B0C1D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0906C9B1B5C80EE00B0C1D0 /* MatchismoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchismoTests.m; sourceTree = "<group>"; };
+		B0906CA81B5C820D00B0C1D0 /* CardGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardGameViewController.h; sourceTree = "<group>"; };
+		B0906CA91B5C820D00B0C1D0 /* CardGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardGameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +81,8 @@
 		B0906C7E1B5C80EE00B0C1D0 /* Matchismo */ = {
 			isa = PBXGroup;
 			children = (
-				B0906C831B5C80EE00B0C1D0 /* AppDelegate.h */,
-				B0906C841B5C80EE00B0C1D0 /* AppDelegate.m */,
-				B0906C861B5C80EE00B0C1D0 /* ViewController.h */,
-				B0906C871B5C80EE00B0C1D0 /* ViewController.m */,
+				B0906CA81B5C820D00B0C1D0 /* CardGameViewController.h */,
+				B0906CA91B5C820D00B0C1D0 /* CardGameViewController.m */,
 				B0906C891B5C80EE00B0C1D0 /* Main.storyboard */,
 				B0906C8C1B5C80EE00B0C1D0 /* Images.xcassets */,
 				B0906C8E1B5C80EE00B0C1D0 /* LaunchScreen.xib */,
@@ -96,6 +94,8 @@
 		B0906C7F1B5C80EE00B0C1D0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B0906C831B5C80EE00B0C1D0 /* AppDelegate.h */,
+				B0906C841B5C80EE00B0C1D0 /* AppDelegate.m */,
 				B0906C801B5C80EE00B0C1D0 /* Info.plist */,
 				B0906C811B5C80EE00B0C1D0 /* main.m */,
 			);
@@ -219,8 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0906C881B5C80EE00B0C1D0 /* ViewController.m in Sources */,
 				B0906C851B5C80EE00B0C1D0 /* AppDelegate.m in Sources */,
+				B0906CAA1B5C820D00B0C1D0 /* CardGameViewController.m in Sources */,
 				B0906C821B5C80EE00B0C1D0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
