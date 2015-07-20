@@ -10,9 +10,17 @@
 
 @interface CardGameViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *flipLabel;
+@property (nonatomic) int flipCount;
+
 @end
 
 @implementation CardGameViewController
+
+- (void)setFlipCount: (int)flipCount{
+    _flipCount=flipCount;
+    self.flipLabel.text=[NSString stringWithFormat:@"Flips: %d", _flipCount];
+}
 
 - (IBAction)touchCardButton:(UIButton *)sender {
     
@@ -25,6 +33,8 @@
         [sender setBackgroundImage:image forState:UIControlStateNormal];
         [sender setTitle:@"A♣️" forState:UIControlStateNormal];
     }
+    
+    self.flipCount++;
     
 }
 
