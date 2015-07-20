@@ -15,9 +15,17 @@
 @implementation CardGameViewController
 
 - (IBAction)touchCardButton:(UIButton *)sender {
-    UIImage *image = [UIImage imageNamed:@"cardback"];
-    [sender setBackgroundImage:image forState:UIControlStateNormal];
-    [sender setTitle:@"" forState:UIControlStateNormal];
+    
+    if ([sender.currentTitle length]) {
+        UIImage *image = [UIImage imageNamed:@"cardback"];
+        [sender setBackgroundImage:image forState:UIControlStateNormal];
+        [sender setTitle:@"" forState:UIControlStateNormal];
+    }else{
+        UIImage *image = [UIImage imageNamed:@"cardfront"];
+        [sender setBackgroundImage:image forState:UIControlStateNormal];
+        [sender setTitle:@"A♣️" forState:UIControlStateNormal];
+    }
+    
 }
 
 @end
