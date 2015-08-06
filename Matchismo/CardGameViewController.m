@@ -17,6 +17,15 @@
 
 @implementation CardGameViewController
 
+- (Deck *) deck
+{
+    if (!_deck)
+    {
+        _deck = [[Deck alloc] init];
+    }
+    return _deck;
+}
+
 - (void)setFlipCount: (int)flipCount{
     _flipCount=flipCount;
     self.flipLabel.text=[NSString stringWithFormat:@"Flips: %d", _flipCount];
@@ -31,7 +40,7 @@
     }else{
         UIImage *image = [UIImage imageNamed:@"cardfront"];
         [sender setBackgroundImage:image forState:UIControlStateNormal];
-        [sender setTitle:@"A♣️" forState:UIControlStateNormal];
+        [sender setTitle:[[self.deck drawRandomCard] contents]  forState:UIControlStateNormal];
     }
     
     self.flipCount++;
