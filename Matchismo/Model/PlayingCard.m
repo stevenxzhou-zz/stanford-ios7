@@ -55,4 +55,20 @@
     return _suit ? _suit : @"?";
 }
 
+- (int) match: (NSArray *) otherCards
+{
+    int score = 0;
+    
+    if ([otherCards count] == 1) {
+        PlayingCard *card = [otherCards firstObject];
+        if (card.rank == self.rank) {
+            score = 4;
+        } else if ([card.suit isEqualToString: self.suit]){
+            score = 1;
+        }
+    }
+    
+    return score;
+}
+
 @end
