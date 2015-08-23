@@ -60,4 +60,13 @@
 - (UIImage *) backgroundImageForCard: (Card *) card {
     return [UIImage imageNamed:card.isChosen?@"cardfront":@"cardback"];
 }
+
+// Assignment2 Task2 Restart The Game
+- (IBAction)gameRestart:(UIButton *)sender {
+
+    self.game = nil;
+    [self updateUI];
+
+}
+
 @end
